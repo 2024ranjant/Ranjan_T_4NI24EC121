@@ -55,6 +55,35 @@
 #### since:
 #### p ≤ VDD*ID
 #### P/VDD
-#### ID ≤(0.5×10^-3)
-#### ID ≤
-#### ID ≤
+#### ID ≤ P/VDD
+#### ID ≤ (0.5×10^-3)
+#### ID ≤ 333.333
+#### let us assume
+#### ID = 200uA
+#### power
+#### P ≤ ID * VDD
+#### 200uA*1.5
+#### 0.3 
+#### current can be taken less than 333.333uA
+### Mid point Bias
+#### Midpoint Bias
+#### In a Common Source amplifier, proper biasing of the MOSFET is necessary to allow the output voltage to vary over the #### widest possible range without distortion. If the transistor is biased too close to cutoff or saturation, one side of #### output waveform will be clipped, resulting in nonlinear amplification.
+#### To avoid this, the operating point (Q-point) is selected near the center of the DC load line. When the drain voltage is #### approximately half of the supply voltage, the output can swing equally in both positive and negative directions. This #### condition ensures maximum symmetrical signal excursion and minimizes distortion.
+#### Therefore, for midpoint bias in a CS amplifier, the drain voltage is usually chosen as:
+#### VD = VDD/2
+#### This biasing approach provides optimal dynamic range and stable amplifier operation.
+#### Drain resistor:
+#### RD = (VDD-VDS)/ID
+#### RD = (1.5-0.75)/200uA
+### For saturation region:
+#### VDS ≥ VGS -VTH 
+#### 0.75 ≥ VGS - 0.38
+#### VGS ≥ 1.11 V
+#### by mosfet ID Eqn
+#### ID = (1/2)/un Cox(W/L)(VGS - VTH)^2
+#### W = (2ID L)/(uN Cox(VGS - Vth)^2)
+#### we get w =1.07
+#### theoritically for ID = 200uA we get w=1.07um
+#### practically for ID = 200um we gwt w=1.534um
+#### therefore from current Eqn ID is directly proportional to w and 
+#### length is inversely proportional
