@@ -87,3 +87,10 @@
 #### practically for ID = 200um we gwt w=1.534um
 #### therefore from current Eqn ID is directly proportional to w and 
 #### length is inversely proportional
+## DC operating point 
+<img width="456" height="221" alt="image" src="https://github.com/user-attachments/assets/c9aa3f92-c007-48d2-a08b-1eb91a15c95f" />
+
+#### since VDS = 0.75 
+#### ie.. VGS ≥ Vth
+#### VDS ≥ VGS - Vth 
+#### mosfet is in saturation region
