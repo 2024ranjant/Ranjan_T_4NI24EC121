@@ -48,6 +48,7 @@
 #### These parameters ensure that the MOSFET operates in saturation region while satisfying the given power constraint and allowing symmetrical signal swing.
 ## circuit
 <img width="487" height="378" alt="image" src="https://github.com/user-attachments/assets/d78145a6-3aa2-46b7-aef6-a1b5303c1f80" />
+
 ## DC Analysis
 #### power given 
 #### P ≤ 0.5
