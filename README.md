@@ -94,3 +94,47 @@
 #### ie.. VGS ≥ Vth
 #### VDS ≥ VGS - Vth 
 #### mosfet is in saturation region
+## DC Sweep Analysis
+#### DC Sweep analysis in LTspice is a simulation in which the DC value of a selected voltage or current source is varied #### step by step within a defined range. At each step, the simulator determines the corresponding DC operating point of the #### circuit.
+#### In MOSFET-based circuits, sweeping the gate-to-source voltage � is useful for:
+#### Determining the threshold voltage of the transistor
+#### Studying the variation of drain current � with �
+#### Identifying cutoff, triode, and saturation regions
+#### Selecting an appropriate bias point (Q-point) for amplifier operation
+<img width="1600" height="745" alt="image" src="https://github.com/user-attachments/assets/5e17b5c0-c42a-4982-ba51-d8ef6cae353e" />
+
+## Transient Analysis
+### (Time-Domain Response)
+#### A sinusoidal input signal of 1 kHz was applied at the gate terminal of the MOSFET to examine the time-domain behavior #### of the Common Source amplifier. Transient simulation is used to confirm voltage amplification, phase reversal, and #### #### linear response of the amplifier around its bias point.
+#### Input Signal (Vin)
+#### Frequency : 1 kHz
+#### Amplitude : 19.192 mV peak-to-peak
+#### The applied signal amplitude is kept sufficiently small so that the MOSFET remains in the small-signal operating region #### about the chosen Q-point.
+<img width="1600" height="758" alt="image" src="https://github.com/user-attachments/assets/b32f522a-1d1e-4f3f-8e99-b80f6e80f18b" />
+
+### output Signal (Vout)
+#### Measured amplitude : 43.919 mV peak
+#### The output waveform obtained from transient simulation shows an amplified sinusoidal signal at the drain terminal. The #### output is inverted with respect to the input, confirming the 180° phase shift characteristic of the Common Source #### #### amplifier. The observed amplitude indicates proper voltage amplification while maintaining linear operation around the #### bias point.
+<img width="1600" height="756" alt="image" src="https://github.com/user-attachments/assets/121302ca-dd70-4457-a8b1-50a10196dc8a" />
+
+
+###Input and Output Signals
+#### Input (Vin)
+#### Frequency : 1 kHz
+## Amplitude : 19.192 mV peak-to-peak
+#### Output (Vout)
+#### Measured amplitude : 43.919 mV peak
+#### A small sinusoidal signal was applied at the gate of the MOSFET, and the corresponding output was observed at the drain #### terminal. The output waveform is amplified and exhibits a 180° phase reversal relative to the input, confirming the #### characteristic behavior of a Common Source amplifier. The measured output amplitude demonstrates that the amplifier #### provides voltage gain while operating in the linear region around the selected bias point.
+<img width="1600" height="745" alt="image" src="https://github.com/user-attachments/assets/c3b01e4a-d89a-4aeb-8d5e-74b34a03fcc7" />
+
+#### Gain Av = 2.775 v/v
+#### in dB = 8.865 dB
+
+
+## AC Analysis
+### Without Load Capacitor
+#### When no external load capacitance is connected at the output, the frequency response of the Common Source amplifier is #### mainly determined by the intrinsic parasitic capacitances of the MOSFET. Due to the absence of additional capacitive #### loading, the amplifier exhibits a wide bandwidth and maintains nearly constant gain over the mid-frequency region. The #### gain starts decreasing only at very high frequencies where the internal device capacitances become dominant.
+#### 3 dB Gain : ≈ 4.189 dB
+#### Upper Cutoff Frequency : ≈ 100 GHz
+<img width="1600" height="770" alt="image" src="https://github.com/user-attachments/assets/4174e560-f124-461c-9c5d-c8222e04205b" />
+
