@@ -138,3 +138,7 @@
 #### Upper Cutoff Frequency : ≈ 100 GHz
 <img width="1600" height="770" alt="image" src="https://github.com/user-attachments/assets/4174e560-f124-461c-9c5d-c8222e04205b" />
 
+<img width="455" height="347" alt="image" src="https://github.com/user-attachments/assets/932a9772-4864-4332-9b7c-a524601f30a5" />
+
+<img width="959" height="457" alt="image" src="https://github.com/user-attachments/assets/845f8ffe-d7b8-4275-8038-32c4c655d1b9" />
+
